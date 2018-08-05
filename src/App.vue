@@ -20,9 +20,9 @@ export default {
   margin-top: 60px;
 }
 body {
-  background-size: cover;
+  /* background-size: cover;
   background-image: url("./assets/acaodeshengri.jpg");
   background-repeat: no-repeat;
-  height: 100%;
+  height: 100%; */
 }
 </style>
