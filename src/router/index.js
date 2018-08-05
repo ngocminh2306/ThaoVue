@@ -1,9 +1,9 @@
 import Vue from "vue";
 import Router from "vue-router";
 import home from "@/components/home";
-import Contact from "@/components/Contact";
-import News from "@/components/News";
-import Form from "@/components/Form";
+import like from "@/components/like";
+import Unlike from "@/components/unlike";
+import content from "@/components/content";
 import FormUser from "@/components/FormUser";
 
 Vue.use(Router);
@@ -16,19 +16,19 @@ export default new Router({
       component: home
     },
     {
-      path: "/contact",
-      name: "Contact",
-      component: Contact
+      path: "/like",
+      name: "like",
+      component: like
     },
     {
-      path: "/news",
-      name: "News",
-      component: News
+      path: "/unlike",
+      name: "unlike",
+      component: Unlike
     },
     {
-      path: "/form",
-      name: "Form",
-      component: Form
+      path: "/content",
+      name: "content",
+      component: content
     },
     {
       path: "/user",

@@ -1,6 +1,7 @@
 <template>
   <div id="app" >
     <router-view/>
+    <!-- <embed src="tên_nhạc.wav" autostart="true"></embed> -->
   </div>
 </template>
 
@@ -20,9 +21,9 @@ export default {
   margin-top: 60px;
 }
 body {
-  /* background-size: cover;
-  background-image: url("./assets/acaodeshengri.jpg");
+  background-size: cover;
+  background-image: url("./assets/bg/bg1.png");
   background-repeat: no-repeat;
-  height: 100%; */
+  height: 100%;
 }
 </style>
