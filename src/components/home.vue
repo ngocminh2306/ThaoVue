@@ -2,10 +2,10 @@
   <div class="hello">
      <div id="demo">
       <transition class="show2" name="slide-fade-out">
-        <img style="float: left; height:200px; width: 150px; padding-left: 100px;" v-if="show1" src="http://media.bilutv.com/uploads/2017/06/240/phuong-dai-tru-2017-201706356.jpg">
+        <img style="float: left; height:200px; width: 150px; padding-left: 100px;" v-if="show1" src="../assets/thao1.png">
       </transition>
       <transition class="show2" name="slide-fade">
-        <img style="float: right; height:200px; width: 150px; padding-right: 100px;" v-if="show1" src="http://media.bilutv.com/uploads/2017/06/240/phuong-dai-tru-2017-201706356.jpg">
+        <img style="float: right; height:200px; width: 150px; padding-right: 100px;" v-if="show1" src="../assets/thao3.png">
       </transition>
 
       <ul>
@@ -43,8 +43,6 @@ export default {
   }
 };
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 h1,
 h2 {
@@ -65,7 +63,8 @@ a {
 .fade-leave-active {
   transition: opacity 4s;
 }
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+.fade-enter,
+.fade-leave-to {
   opacity: 0;
 }
 
