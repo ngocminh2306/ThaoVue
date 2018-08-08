@@ -2,10 +2,10 @@
   <div class="hello">
      <div id="demo">
       <transition class="show2" name="slide-fade-out">
-        <img style="float: left; height:200px; width: 150px; padding-left: 100px;" v-if="show1" src="../assets/thao1.png">
+        <img style="float: left; height:250px; width: 200px; margin-left: 100px;" v-if="show1" src="../assets/thao1.png">
       </transition>
       <transition class="show2" name="slide-fade">
-        <img style="float: right; height:200px; width: 150px; padding-right: 100px;" v-if="show1" src="../assets/thao3.png">
+        <img style="float: right; height:250px; width: 200px; margin-right: 100px;" v-if="show1" src="../assets/thao3.png">
       </transition>
 
       <ul>
