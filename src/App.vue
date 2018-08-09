@@ -25,5 +25,6 @@ body {
   background-image: url("./assets/bg/bg1.png");
   background-repeat: no-repeat;
   height: 100%;
+  overflow: hidden;
 }
 </style>

@@ -1,50 +1,51 @@
 <template>
   <div class="hello">
-    <Snowf
+     <div id="thao">
+           <Snowf
   :amount="100"
   :size="8"
-  :speed="2.5"
+  :speed="0.6"
   :wind="0"
   :opacity="1"
   :swing="1"
   :image="null"
-  :zIndex="null"
+  :zIndex="-1"
   :resize="true"
   color="#fff"
 />
-     <div id="thao">
-      <!-- <transition class="show2" name="slide-fade-out">
-        <img style="float: left; height:250px; width: 200px; margin-left: 100px;" v-if="show1" src="../assets/thao1.png">
-      </transition>
-      <transition class="show2" name="slide-fade">
-        <img style="float: right; height:250px; width: 200px; margin-right: 100px;" v-if="show1" src="../assets/thao3.png">
-      </transition> -->
-        <img id="imgthao1" style="left:0px; height:250px; width: 200px; margin-right: 100px;" src="../assets/thao3.png">
-        <img id="imgthao2" style="left:20%; height:100px; width: 100px;" src="../assets/thao3.png">
-        <img id="imgthao3" style="left:30%; height:100px; width: 100px;" src="../assets/thao3.png">
-        <img id="imgthao4" style="left:50%; height:100px; width: 100px;" src="../assets/thao3.png">
-        <img id="imgthao5" style="left:60%; height:100px; width: 100px;" src="../assets/thao3.png">
-        <img id="imgthao6" style="left:40%; height:100px; width: 100px;" src="../assets/thao3.png">
-        <img id="imgthao7" style="left:500px; height:100px; width: 100px;" src="../assets/thao3.png">
-        <img id="imgthao8" style="left:95%; height:100px; width: 100px;" src="../assets/thao3.png">
-        <img id="imgthao9" style="left:80%; height:100px; width: 100px;" src="../assets/thao3.png">
-        <img id="imgthao10" style="left:70%; height:100px; width: 100px;" src="../assets/thao3.png">
-      <ul>
-        <h2>Thích trang web này không em?</h2>
-        <li>
+ 
+        <img id="imgthao1" style="left:0px; " src="../assets/HappyBirthday.png">
+        <img id="imgthao2" style="left:10%;" src="../assets/HappyBirthday.png">
+        <img id="imgthao3" style="left:20%; height:100px; width: 100px;" src="../assets/thao3.png">
+        <img id="imgthao4" style="left:30%;;" src="../assets/HappyBirthday.png">
+        <img id="imgthao5" style="left:40%; height:100px; width: 100px;" src="../assets/timg.gif">
+        <img id="imgthao6" style="left:50%; height:50px; width: 50px;" src="../assets/thao3.png">
+        <img id="imgthao7" style="left:60%; height:100px; width: 100px;" src="../assets/timg.gif">
+        <img id="imgthao8" style="left:70%; height:100px; width: 100px;" src="../assets/timg.gif">
+        <img id="imgthao9" style="left:80%; height:100px; width: 100px;" src="../assets/timg.gif">
+        <img id="imgthao10" style="left:90%; height:50px; width: 50px;" src="../assets/thao3.png">
+      <ul style="margin-top: 8%">
+        <input class="thaomminput" type="text" placeholder="Nhập tên của bạn" />
+        <input class="thaomminput" type="password" placeholder="Nhập mật mã" />
+         <li>
+          <router-link to="/like">
+            <button class="thaommsubmit">Đăng nhập</button>
+          </router-link>
+        </li>
+        <!-- <li>
           <router-link to="/like">
             <button class="btn-primary">Thích</button>
           </router-link>
-        </li>
-        <li>
+        </li> -->
+        <!-- <li>
           <router-link to="/unlike">
             <button class="btn-primary">Không thích</button>
           </router-link>
-        </li>
+        </li> -->
       </ul>
-      <div>
+      <!-- <div>
         <h2>15/08/2018</h2>
-      </div>
+      </div> -->
   </div>
   </div>
 </template>
@@ -123,69 +124,76 @@ a {
 /*icon move top to bottom*/
 
 #imgthao1 {
-  animation: flow1 10s infinite;
+  animation: flow 25s infinite;
   animation-direction: normal ;
   position: absolute; 
 }
 #imgthao2 {
-  animation: flow1 7s infinite;
+  animation: flow1 14s infinite;
   animation-direction: normal ;
   position: absolute; 
 }
 #imgthao3 {
-  animation: flow1 5s infinite;
+  animation: flow1 24s infinite;
   animation-direction: normal ;
   position: absolute; 
 }
 #imgthao3 {
-  animation: flow2 10s infinite;
+  animation: flow2 28s infinite;
   animation-direction: normal ;
   position: absolute; 
 }
 #imgthao4 {
-  animation: flow1 5s infinite;
+  animation: flow1 24s infinite;
   animation-direction: normal ;
   position: absolute; 
 }
 #imgthao5 {
-  animation: flow1 10s infinite;
+  animation: flow1 18s infinite;
   animation-direction: normal ;
   position: absolute; 
 }
 #imgthao6 {
-  animation: flow1 10s infinite;
+  animation: flow1 17s infinite;
   animation-direction: normal ;
   position: absolute; 
 }
 #imgthao7 {
-  animation: flow3 3s infinite;
+  animation: flow3 15.5s infinite;
   animation-direction: normal ;
   position: absolute; 
 }
 #imgthao8 {
-  animation: flow2 20s infinite;
+  animation: flow2 35s infinite;
   animation-direction: normal ;
   position: absolute; 
 }
 #imgthao9 {
-  animation: flow1 5s infinite;
+  animation: flow1 22.5s infinite;
   animation-direction: normal ;
   position: absolute; 
 }#imgthao10 {
-  animation: flow1 9s infinite;
+  animation: flow1 21.5s infinite;
   animation-direction: normal ;
   position: absolute; 
 }
+@keyframes flow {
+    from{ top: -100px;
+     }
+    to{ 
+      top: 100%;
+    }
+}
 @keyframes flow1 {
-    from{ top: -50px;
-     transform: rotate(-90deg);
+    from{ top: -150px;
+      transform: rotate(360deg);
      }
     to{ top: 100%;
-    transform: rotate(270deg)
+    animation-name: rotate360;
     }
 }
 @keyframes flow2 {
-    from{ top: -50px;
+    from{ top: -150px;
      transform: rotate(90deg);
      }
     to{ top: 100%;
@@ -193,11 +201,52 @@ a {
     }
 }
 @keyframes flow3 {
-    from{ top: -50px;
-     transform: rotate(-80deg);
+    from{ top: -150px;
+     transform: rotate(360deg); 
      }
     to{ top: 100%;
-    transform: rotate(200deg)
+    animation-name: rotate360;
     }
 }
+.thaomminput{
+    outline: 0;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 250px;
+    border-radius: 3px;
+    padding: 10px 15px;
+    margin: 0 auto 10px auto;
+    display: block;
+    text-align: center;
+    font-family: 'Cabin', sans-serif;
+    font-size: 22px;
+    color: white;
+    -webkit-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+    font-weight: 300;
+}
+.thaomminput::placeholder {
+    color: white;
+    opacity: 0.5; /* Firefox */
+}
+.thaommsubmit{
+    outline: 0;
+    background-color: white;
+    font-family: 'Cabin', sans-serif;
+    border: 0;
+    padding: 10px 15px;
+    color: #f879a7;
+    border-radius: 3px;
+    width: 250px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+}
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+} */
 </style>
