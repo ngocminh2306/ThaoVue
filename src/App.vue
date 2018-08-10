@@ -1,11 +1,14 @@
 <template>
   <div id="app" >
     <router-view/>
-    <!-- <embed src="tên_nhạc.wav" autostart="true"></embed> -->
+    <audio id="audio" volume="0.1">
+      <source src="./assets/1.mp3" type="audio/mp3">
+    </audio>
   </div>
 </template>
 
 <script>
+
 export default {
   name: "App"
 };
