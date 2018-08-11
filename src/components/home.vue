@@ -25,12 +25,12 @@
         <img id="imgthao9" style="left:80%; height:100px; width: 100px;" src="../assets/timg.gif">
         <img id="imgthao10" style="left:90%; height:80px; width: 150px;" src="https://data.whicdn.com/images/259345028/original.gif">
       <ul style="margin-top: 8%">
-        <input class="thaomminput" type="text" placeholder="Nhập tên của bạn" />
-        <input class="thaomminput" type="password" placeholder="Nhập mật mã" />
+        <input class="thaomminput" v-model="user" type="text" placeholder="Nhập tên của bạn" />
+        <input class="thaomminput" v-model="password" type="password" placeholder="Nhập mật mã" />
          <li>
-          <router-link to="/like">
-            <button class="thaommsubmit">Đăng nhập</button>
-          </router-link>
+          <!-- <router-link to="/like"> -->
+            <button class="thaommsubmit" @click="login()" >Đăng nhập</button>
+          <!-- </router-link> -->
         </li>
         <!-- <li>
           <router-link to="/like">
@@ -59,10 +59,21 @@ export default {
   name: "home",
   data() {
     return {
+      user: "",
+      password: "",
       show: false,
       show1: false,
       snow: "../assets/thao1.png"
     };
+  },
+  methods: {
+    login() {
+      if (this.user.trim() == "" || this.password.trim() == "") {
+        return;
+      } else {
+        this.$router.push("/like");
+      }
+    }
   },
   mounted() {
     this.show = true;
