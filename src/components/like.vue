@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="  margin-top: 0px !important;">
                <Snowf
   :amount="100"
   :size="8"
@@ -17,12 +17,8 @@
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
         <!-- Slides -->
-        <div class="swiper-slide"> <img style="height:100%; " src="../assets/thao3.png"></div>
         <div class="swiper-slide"><img style="height:100%;" src="../assets/timg.gif"></div>
-        <div class="swiper-slide"><img style="height:100%;" src="../assets/thao3.png"></div>
-        <div class="swiper-slide"><img style="height:100%;" src="../assets/thao3.png"></div>
-        <div class="swiper-slide"><img style="height:100%;" src="../assets/thao3.png"></div>
-        <div class="swiper-slide"><img style="height:100%;" src="../assets/thao3.png"></div>
+        <div class="swiper-slide"><img style="height:100%;" src="../assets/thao99.png"></div>
     </div>
     <!-- If we need pagination -->
     <div class="swiper-pagination"></div>
@@ -84,11 +80,11 @@ export default {
 <style>
 .thaonextbtn {
   position: absolute;
-  top: 42%;
-  right: 50px;
+  top: 47%;
+  right: 30px;
 }
-.thaonextbtn button{
- outline: 0;
+.thaonextbtn button {
+  outline: 0;
   background-color: white;
   font-family: "Cabin", sans-serif;
   border: 0;
@@ -102,9 +98,8 @@ export default {
   transition-duration: 0.25s;
 }
 .swiper-container {
-  margin-top: 10%;
   width: 1028px;
-  height: 100%;
+  height: 100vh;
 }
 .swiper-slide {
   text-align: center;

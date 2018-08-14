@@ -61,13 +61,14 @@ export default {
 };
 </script>
 <style lang="css">
-#messengerThao{
-  left: 32%;
-    background-image: url("../assets/thao7.jpg");
-    background-repeat: no-repeat;
-    height: 730px;
-    width: 745px;
-    position: absolute;
+#messengerThao {
+  left: 29%;
+  background-image: url("../assets/thao7.png");
+  background-repeat: no-repeat;
+  height: 730px;
+  width: 745px;
+  position: absolute;
+  margin-top: 90px;
   /* overflow: hidden; */
 }
 </style>
