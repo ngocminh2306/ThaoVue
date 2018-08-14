@@ -19,6 +19,13 @@
     />
     <div class="" id="messengerThao">
    </div>
+   <div class="text-cmt" id="comment">
+    <div>Làm cái này anh nhận ra anh chả biết chút gì về Thảo cả Thảo ạ =)))</div>
+    <div>Đến 1 cái ảnh để ghép vào cũng không có =))</div>
+    <span>
+      希望我们有梗多机会接触互相了解。
+    </span>
+    </div>
   </div>
 </template>
 
@@ -61,6 +68,11 @@ export default {
 };
 </script>
 <style lang="css">
+.text-cmt {
+  color: aliceblue;
+  font-size: 24px;
+  font-family: "Space Mono", monospace;
+}
 #messengerThao {
   left: 29%;
   background-image: url("../assets/thao7.png");
@@ -68,7 +80,7 @@ export default {
   height: 730px;
   width: 745px;
   position: absolute;
-  margin-top: 90px;
+  margin-top: 120px;
   /* overflow: hidden; */
 }
 </style>

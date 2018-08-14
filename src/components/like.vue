@@ -18,6 +18,7 @@
     <div class="swiper-wrapper">
         <!-- Slides -->
         <div class="swiper-slide"><img style="height:100%;" src="../assets/timg.gif"></div>
+          <div class="swiper-slide"><img style="height:100%;" src="../assets/thao55.jpg"></div>
         <div class="swiper-slide"><img style="height:100%;" src="../assets/thao99.png"></div>
     </div>
     <!-- If we need pagination -->
