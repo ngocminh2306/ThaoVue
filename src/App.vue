@@ -1,8 +1,8 @@
 <template>
   <div id="app" >
     <router-view/>
-    <audio id="audio" volume="0.1">
-      <source src="./assets/1.mp3" type="audio/mp3">
+    <audio id="audio" autoplay volume="0.1">
+      <source src="./assets/2.mp3" type="audio/mp3">
     </audio>
   </div>
 </template>
