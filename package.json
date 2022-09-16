@@ -10,7 +10,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    "bootstrap": "^3.3.7",
+    "bootstrap": "^3.4.1",
     "express": "^4.16.3",
     "hzqing-vue-timeline": "^1.0.3",
     "swiper": "^4.3.5",
